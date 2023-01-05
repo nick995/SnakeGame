@@ -4,6 +4,10 @@
 
 This is the first version of the program that implements a Controller and View of the snake game. This program allows you to play 'simple snake game' through MAUI application.
 
+## Playing
+
+For playing game, please set Server and SnakeClient as Startup Project.
+
 ## Features
 
 - We added the cute eyes on the snake
@@ -17,8 +21,6 @@ Snakes, PowerUp, and Walls are based on the instruction, we added the default Co
 > GameModel: We set the default constructor of each for the world, but snake has some method
 
 1.	Snake: Snake classes basically consist of methods that implement snake motion. The direction changes depending on the command entered by the player, and when getting(colliding) powerups, the helper method was invoked to stop the tail for 12 frames (default setting). We also created a helper method to make it possible to teleport at the other side when snake is reached to the border of the world.
-
-> Server: We actually implements a lot of logic in this class. We had to optimize it, but I couldn't because I didn't have enough time.
 
 1.	Thread: When the client successfully connects to the server, we created a thread and separated it from the main thread so that the client's work can be performed on the seperated thread. When a new thread is created, the server receive the necessary information from the client. When the client first sends its name to the server, the server takes the name and creates a new snake object, and sends the information of the object to the user. The server also sends information about the objects created in the world so that users can build a game world. At this time, while creating and sending World's information, lock the World so that the information does not overlap with other threads to prevent the information from being transmitted and received incorrectly. After that, OnNetworkAction of the client's socket is changed to a method of checking the user's command input information, and the Run() method is invoked to update the actual screen of the game.
 
