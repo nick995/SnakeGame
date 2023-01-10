@@ -1,4 +1,4 @@
-(Modified on 09.Dec.2022 - Model part)
+This Repository will be private asap
 
 # PS8_SnakeGame
 
