@@ -1,4 +1,5 @@
-This Repository will be private asap
+This Repository will be private asap.
+DO NOT COPY
 
 # PS8_SnakeGame
 
