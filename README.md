@@ -1,7 +1,7 @@
 This Repository will be private asap.
 DO NOT COPY
 
-# PS8_SnakeGame
+# SnakeGame
 
 This is the first version of the program that implements a Controller and View of the snake game. This program allows you to play 'simple snake game' through MAUI application.
 
